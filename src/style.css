@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: 'Minecraft', sans-serif;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#controls {
+  display: flex;
+  overflow-y: auto;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, rgba(163, 255, 219, 0.5074404761904762) 0%, rgba(172, 172, 172, 0.7147233893557423) 100%);
+}
+
+#controlsDivLeft, #controlsDivCenter, #controlsDivRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}
+#controlsDivRight {
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+#controlsDivLeft {
+  gap: 10px;
+}
+
+#controlsDivTexture, #controlsDivBackground, #controlsDivTxt, #controlsDivSize, #controlsDivPole {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  width: 100%;
+}
+
+.text-input {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 35%;
+  text-align: center;
+}
+
+.texture-button, .background-button, .size-button, .pole-button {
+  padding: 25px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.background-button{
+  width: min-content;
+  padding: 10px;
+}
+
+.texture-button {
+  padding: 50px;
+}
+
+.size-button {
+  width: 80px;
+  height: 80px;
+}
+
+.size-label {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.size-name {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.pole-button {
+  height: 50px;
+  padding: 0px 10px;
+  font-size: medium;
+  background-color: #f0f0f0;
+}
+
+.selected {
+  border-color: #00f;
+}
